@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Page Details -->
     <section class="mt-5 text-light text-center">
       <h1 class="display-4 fw-bold title">Get Complete Details</h1>
       <p class="fs-4">
@@ -23,6 +24,7 @@
       </p>
     </section>
 
+    <!-- Search Container -->
     <section class="search-container mt-4">
       <div
         class="d-flex justify-content-center align-items-center"
@@ -63,53 +65,67 @@
       </div>
     </section>
 
+    <!-- Loader -->
     <section>
       <span id="loader"></span>
     </section>
 
+    <!-- Movie Container -->
     <section
       class="movie-container text-light d-flex gap-4 mt-5"
       id="movieContainer"
     >
       <img src="" id="movieImg" class="movie-img" alt="movie-img" />
       <div class="movie-details">
+        <!-- Title -->
         <h1><span id="title"></span></h1>
+        <!-- Genre -->
         <p class="movie-attribute">
           Genre: <span id="genre" class="text-success"></span>
         </p>
+        <!-- Synopsis -->
         <p class="movie-attribute">
           Synopsis:
           <span id="desc" class="d-block mt-1 text-light"></span>
         </p>
+        <!-- Release Date -->
         <p class="d-inline-block movie-attribute me-2">
           Release Date: <span id="releaseDate" class="text-light"></span>
         </p>
         <span>|</span>
+        <!-- Run Time -->
         <p class="d-inline-block movie-attribute ms-2">
           Run Time: <span id="movieTime" class="text-light"></span>
         </p>
+        <!-- Director -->
         <p class="movie-attribute">
           Director: <span id="director" class="text-primary"></span>
         </p>
+        <!-- Writers -->
         <p class="movie-attribute">
           Writers: <span id="writer" class="text-primary"></span>
         </p>
+        <!-- Actors -->
         <p class="movie-attribute">
           Stars: <span id="actors" class="text-primary"></span>
         </p>
+        <!-- Box Office -->
         <p class="d-inline-block movie-attribute me-2">
           Box Office: <span id="boxOffice" class="text-light"></span>
         </p>
         <span>|</span>
+        <!-- Awards -->
         <p class="d-inline-block movie-attribute ms-2">
           Awards: <span id="awards" class="text-light"></span>
         </p>
+        <!-- Rating -->
         <p class="movie-attribute">
           IMDb Rating: ⭐<span id="imdb" class="text-light fw-bold"></span>
         </p>
       </div>
     </section>
 
+    <!-- Error Container -->
     <section class="error-container text-center mt-5" id="errorContainer">
       <h1 class="notFound fw-bold display-5">Movie not found!</h1>
       <p class="text-light fs-5">

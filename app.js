@@ -1,4 +1,4 @@
-let API = "http://www.omdbapi.com/?apikey=b2647f6f&t=";
+let API = "https://www.omdbapi.com/?apikey=b2647f6f&t=";
 let loadingStatus = false;
 let loader = document.getElementById("loader");
 let movieName = document.getElementById("movieName");

@@ -94,12 +94,12 @@ body {
 
 /* Movie Container*/
 .movie-container {
-  width: 965px;
+  width: 777px;
   margin: 0 auto;
 }
 
 .movie-details {
-  width: 600px;
+  /* width: 600px; */
 }
 
 .movie-img {

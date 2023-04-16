@@ -22,7 +22,6 @@ function fetchMovieDetails() {
 
   fetch(apiQuery)
     .then((response) => {
-      console.log(response);
       return response.json();
     })
     .then((data) => {
@@ -54,7 +53,6 @@ function fetchMovieDetails() {
           releaseDate.innerText = data.Released;
 
           movieName.value = "";
-          console.log(data);
 
           loadingStatus = false;
           renderMovie();

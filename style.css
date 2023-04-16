@@ -11,6 +11,10 @@ body {
   background-color: #212529;
 }
 
+.container {
+  width: 1200px;
+}
+
 /* Movie Details */
 .title {
   background: #d9480f; /* fallback for old browsers */
@@ -98,10 +102,6 @@ body {
   margin: 0 auto;
 }
 
-.movie-details {
-  /* width: 600px; */
-}
-
 .movie-img {
   height: 420px;
   border-radius: 4px;
@@ -132,13 +132,35 @@ body {
 
 /* Footer */
 footer {
-  font-size: 12px;
   position: absolute;
-  left: 2px;
-  bottom: 0px;
+  left: 4px;
+  bottom: 4px;
 }
 
 footer a {
   text-decoration: none;
-  color: #d0bfff;
+}
+
+/* Media Queries */
+
+@media (max-width: 900px) {
+  .movie-container {
+    width: 750px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .movie-container {
+    width: 500px;
+    flex-wrap: wrap;
+  }
+
+  .movie-img {
+    margin: 0 auto;
+  }
 }
